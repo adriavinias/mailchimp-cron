@@ -1,0 +1,18 @@
+<mjml>
+  <mj-head>
+    <mj-title>Newsletter</mj-title>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="20px">Hola {{name}},</mj-text>
+        <mj-text>¡Bienvenido a nuestra newsletter! Aquí tienes las últimas novedades.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button href="https://tu-web.com">Ver más</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
