@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, FROM_EMAIL } = require("../config");
+const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, EMAIL_FROM } = require("../config");
 
 const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 
 async function sendEmail(to, subject, html) {
   try {
-    await transporter.sendMail({ from: FROM_EMAIL, to, subject, html });
+    await transporter.sendMail({ from: EMAIL_FROM, to, subject, html });
     console.log(`📧 Correo enviado a ${to}`);
   } catch (error) {
     console.error(`❌ Error enviando a ${to}:`, error);

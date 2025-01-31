@@ -9,6 +9,21 @@
         <mj-text>¡Bienvenido a nuestra newsletter! Aquí tienes las últimas novedades.</mj-text>
       </mj-column>
     </mj-section>
+    {{#each items}}
+    <mj-section>
+      <mj-column>
+        <mj-image width="300px" src={{image_url}} />
+        <mj-text font-size="20px">{{title}}</mj-text>
+        <mj-text font-size="20px">{{price}}</mj-text>
+        <mj-button href="https://tu-web.com">Ver más</mj-button>
+      </mj-column>
+
+      <mj-column>
+    
+      </mj-column>
+      {{/each}} 
+      
+    </mj-section>
     <mj-section>
       <mj-column>
         <mj-button href="https://tu-web.com">Ver más</mj-button>
